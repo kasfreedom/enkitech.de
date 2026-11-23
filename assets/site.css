@@ -240,7 +240,7 @@ a:hover { text-decoration-thickness: 2px; }
 .frame > :last-child { margin-bottom: 0; }
 
 /* Placeholder the owner must replace before the site goes live.
-   README: `grep -rn "TODO-" --include=*.html .` must print nothing. */
+   README: `grep -rn 'TODO-' --include='*.html' .` must print nothing. */
 .todo {
   background: var(--todo-bg);
   outline: 1.5px dashed var(--todo-line);

@@ -23,7 +23,7 @@ the site while any are left** — a `.de` site without a complete Impressum can 
 warned off (abgemahnt). This must print nothing:
 
 ```bash
-grep -rn "TODO-" --include=*.html .
+grep -rn 'TODO-' --include='*.html' .
 ```
 
 | Placeholder | Where | What |
