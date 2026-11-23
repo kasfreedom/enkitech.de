@@ -13,67 +13,65 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <div class="rail">
-        <a class="brand" href="./" aria-current="page" aria-label="Enkitech home">
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4.5"/><path d="M8 12.4h8a4 4 0 1 0-1.3 3"/></svg>
-          enkitech
-        </a>
-      </div>
-      <nav class="rail" aria-label="Main">
+      <a class="brand" href="./" aria-current="page">enkitech</a>
+      <nav class="site-nav" aria-label="Main">
         <a href="#software">Software</a>
         <a href="#contact">Contact</a>
-        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2a8.8 8.8 0 1 0 0 17.6V3.2Z"/><path d="M12 6.3a5.7 5.7 0 0 1 0 11.4"/><g opacity=".22" transform="translate(.55 .35)"><path d="M12 3.2a8.8 8.8 0 1 0 0 17.6V3.2Z"/><path d="M12 6.3a5.7 5.7 0 0 1 0 11.4"/></g></svg></button>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17Z" fill="currentColor"/></svg></button>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="wrap intro" aria-labelledby="intro-title">
-      <h1 id="intro-title">Small software, made by one person.</h1>
+      <h1 id="intro-title">Small, careful software, made by one person.</h1>
       <p class="lede">Enkitech is the name I publish my software under. It is not a company: there is no team and no business behind it, just me and the tools I build and maintain.</p>
     </section>
 
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="wrap">
-        <h2 id="about-title">Who's behind this</h2>
-        <p>I'm <span class="todo">TODO-NAME</span>, an independent developer. Every project on this page is written and looked after by me. Each one has its own website with documentation and a privacy policy; this page is where they meet.</p>
+        <h2 id="about-title">About</h2>
+        <div class="body">
+          <p>I'm <span class="todo">TODO-NAME</span>, an independent developer. Every project here is written and looked after by me. Each has its own website with documentation and a privacy policy; this page is where they meet.</p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="software" aria-labelledby="software-title">
       <div class="wrap">
         <h2 id="software-title">Software</h2>
-        <ul class="projects">
-          <li class="project sketch wash">
-            <h3 id="sabura-title"><svg viewBox="0 0 1024 1024" aria-hidden="true"><g transform="scale(32)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="16" rx="3"/><path d="M12 8V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"/><path d="m13 20 10-10m-5 0h5v5"/></g></svg>Sabura</h3>
-            <p>A whiteboard that lives in one file. Every board is a single HTML file with the editor built in: open it in any browser, edit it, send it on. No install, no account, no server, and it works offline. AI agents such as Claude can read and edit boards too.</p>
-            <p class="tags">Free and open source (MIT) · runs in the browser</p>
-            <p class="links">
-              <a class="button" href="https://sabura-app.github.io/">Visit the Sabura site</a>
-              <a href="https://github.com/sabura-app/sabura-editor">Source on GitHub</a>
-            </p>
-          </li>
-          <!-- To add a project, copy this block above this comment and fill it in.
-               Alternate "sketch wash" and "sketch alt" so neighbouring cards look hand-drawn differently.
-          <li class="project sketch alt">
-            <h3 id="NAME-title">(optional inline SVG icon, aria-hidden="true")Project name</h3>
-            <p>One or two sentences: what it is and who it is for.</p>
-            <p class="tags">Licence · platform</p>
-            <p class="links">
-              <a class="button" href="https://…">Visit the project site</a>
-              <a href="https://github.com/…">Source on GitHub</a>
-            </p>
-          </li>
-          -->
-        </ul>
-        <p class="aside">More projects will join Sabura here as they are ready.</p>
+        <div class="body">
+          <ul class="projects">
+            <li class="project">
+              <h3>Sabura</h3>
+              <p class="kind">Whiteboard · free and open source (MIT) · runs in the browser</p>
+              <p>A whiteboard that lives in one file. Every board is a single HTML file with the editor built in: open it in any browser, edit it, send it on. No install, no account, no server, and it works offline. AI agents such as Claude can read and edit boards too.</p>
+              <p class="links">
+                <a href="https://sabura-app.github.io/">Visit the Sabura site →</a>
+                <a href="https://github.com/sabura-app/sabura-editor">Source on GitHub →</a>
+              </p>
+            </li>
+            <!-- To add a project, copy this block above this comment and fill it in.
+            <li class="project">
+              <h3>Project name</h3>
+              <p class="kind">What kind of thing · licence · platform</p>
+              <p>One or two sentences: what it is and who it is for.</p>
+              <p class="links">
+                <a href="https://…">Visit the project site →</a>
+                <a href="https://github.com/…">Source on GitHub →</a>
+              </p>
+            </li>
+            -->
+          </ul>
+          <p class="more">More projects will join Sabura here as they are ready.</p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title">Contact</h2>
-        <div class="frame">
+        <div class="body">
           <p>Email: <span class="todo">TODO-CONTACT-EMAIL</span></p>
           <p>Found a bug or want a feature in Sabura? Please open an issue on <a href="https://github.com/sabura-app/sabura-editor/issues">GitHub</a>, so others can follow it too.</p>
         </div>

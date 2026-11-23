@@ -7,11 +7,10 @@ No build step, no third-party requests (no web fonts, CDNs or analytics).
 - `index.html`: who's behind it, the software (Sabura; a commented template in the
   `<ul class="projects">` list for adding the next project), contact.
 - `impressum/`: Impressum (German legal notice, § 5 DDG). `privacy/`: privacy policy.
-- `assets/site.css`: styles, in the Sabura site's paper look. `assets/theme.js`: light/dark
-  switch (stored in the visitor's browser under `enkitech_theme`).
-- `assets/sketch/*.svg`: hand-drawn outlines copied unchanged from the Sabura site
-  (`sabura-app/sabura-app.github.io`, `assets/sketch/`), which generates them from the
-  Sabura editor's sketch code. To refresh them, copy them again from there.
+- `assets/site.css`: styles: one quiet column, serif headings, system fonts only, light and
+  dark mode. Deliberately plainer than the projects' own sites, so each project keeps its
+  own look. `assets/theme.js`: light/dark switch (stored in the visitor's browser under
+  `enkitech_theme`).
 - `CNAME`: the custom domain GitHub Pages serves this repo on.
 
 Preview locally: `python3 -m http.server 8812` and open http://127.0.0.1:8812/.
