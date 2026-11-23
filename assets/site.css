@@ -142,7 +142,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 code { font: 0.88em var(--font-mono); background: var(--accent-soft); border-radius: 3px; padding: 1px 5px; }
 
-/* Reading pages (Impressum, privacy) */
+/* Reading pages (privacy) */
 .page { padding-block: 48px 80px; }
 .page article { max-width: 36em; }
 .page h1 { margin: 0 0 6px; font: 400 clamp(36px, 5vw, 48px)/1.1 var(--font-serif); color: var(--heading); }
