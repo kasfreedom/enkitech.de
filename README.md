@@ -4,8 +4,8 @@ Static site for `enkitech.de`, a personal page (about me, my work, contact) unde
 name Enkitech (a personal brand, not a registered company). Served by GitHub Pages.
 No build step, no third-party requests (no web fonts, CDNs or analytics).
 
-- `index.html`: home page, written as one short note: about me, the projects in two lines,
-  contact. All pages share one layout (`.page` in `site.css`): one column, one spacing
+- `index.html`: home page, written as one short note: about me, a pointer to the projects,
+  contact. The projects are listed only on `projects/`. All pages share one layout (`.page` in `site.css`): one column, one spacing
   rhythm, no section dividers or side labels.
 - `projects/`: the projects (Sabura, Athyr; a commented template at the end of the list
   for adding the next one).

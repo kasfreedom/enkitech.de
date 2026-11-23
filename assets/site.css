@@ -112,11 +112,6 @@ a:hover { text-decoration-thickness: 2px; }
 .page .lede { color: var(--muted); }
 .page address { font-style: normal; }
 
-/* Home: the projects as a short list inside the text */
-.work { list-style: none; padding: 0; }
-.work li + li { margin-top: 0.5em; }
-.work a { font-weight: 600; }
-
 /* Projects page: the links under each project */
 .project-links { display: flex; flex-wrap: wrap; gap: 4px 24px; }
 
