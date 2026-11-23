@@ -15,7 +15,6 @@
     <div class="wrap">
       <a class="brand" href="../">enkitech</a>
       <nav class="site-nav" aria-label="Main">
-        <a href="../">About</a>
         <a href="./" aria-current="page">Projects</a>
         <a href="../#contact">Contact</a>
         <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17Z" fill="currentColor"/></svg></button>
@@ -23,45 +22,36 @@
     </div>
   </header>
 
-  <main id="main" class="page">
-    <div class="wrap">
-      <article>
-      <h1>Projects</h1>
-      <p class="meta">Things I work on. Each has its own site with documentation.</p>
-      <ul class="projects">
-        <li class="project">
-          <h3>Sabura</h3>
-          <p class="kind">Whiteboard · free and open source (MIT) · runs in the browser</p>
-          <p>A whiteboard that lives in one file. Every board is a single HTML file with the editor built in: open it in any browser, edit it, send it on. No install, no account, no server, and it works offline. AI agents such as Claude can read and edit boards too.</p>
-          <p class="links">
-            <a href="https://sabura.enkitech.de/">Visit the Sabura site →</a>
-            <a href="https://github.com/sabura-app/sabura-editor">Source on GitHub →</a>
-          </p>
-        </li>
-        <li class="project">
-          <h3>Athyr</h3>
-          <p class="kind">AI agent runtime · single binary · language agnostic</p>
-          <p>A lightweight runtime for running AI agents as distributed microservices. One binary to install; agents stay stateless and can be written in any language, with SDKs for Go and Python.</p>
-          <p class="links">
-            <a href="https://athyr.enkitech.de/">Visit the Athyr site →</a>
-            <a href="https://github.com/athyr-tech">Athyr on GitHub →</a>
-          </p>
-        </li>
-        <!-- To add a project, copy this block above this comment and fill it in.
-        <li class="project">
-          <h3>Project name</h3>
-          <p class="kind">What kind of thing · licence · platform</p>
-          <p>One or two sentences: what it is and who it is for.</p>
-          <p class="links">
-            <a href="https://…">Visit the project site →</a>
-            <a href="https://github.com/…">Source on GitHub →</a>
-          </p>
-        </li>
-        -->
-      </ul>
-      <p class="more">More projects will join here as they are ready. Found a bug or want a feature? Please open an issue on the project's GitHub page, so others can follow it too.</p>
-      </article>
-    </div>
+  <main id="main" class="wrap page">
+    <h1>Projects</h1>
+    <p class="lede">Things I've built in my own time. Each has its own site with documentation.</p>
+
+    <h2>Sabura</h2>
+    <p>A whiteboard that lives in one HTML file. Every board is a single file with the editor built in: open it in any browser, edit it, send it on. No install, no account, no server, and it works offline. AI agents such as Claude can read and edit boards too.</p>
+    <p>Free and open source under the MIT licence.</p>
+    <p class="project-links">
+      <a href="https://sabura.enkitech.de/">Sabura website</a>
+      <a href="https://github.com/sabura-app/sabura-editor">Source code on GitHub</a>
+    </p>
+
+    <h2>Athyr</h2>
+    <p>A lightweight runtime for running AI agents as distributed services. You install one binary; agents stay stateless and can be written in any language, with SDKs for Go and Python.</p>
+    <p class="project-links">
+      <a href="https://athyr.enkitech.de/">Athyr website</a>
+      <a href="https://github.com/athyr-tech">Athyr on GitHub</a>
+    </p>
+
+    <!-- To add a project, copy this block above this comment and fill it in.
+    <h2>Project name</h2>
+    <p>One or two sentences: what it is and who it is for.</p>
+    <p class="project-links">
+      <a href="https://…">Project website</a>
+      <a href="https://github.com/…">Source code on GitHub</a>
+    </p>
+    -->
+
+    <h2>Bugs and ideas</h2>
+    <p>Found a bug or want a feature? Open an issue on the project's GitHub page, so others can follow it too.</p>
   </main>
 
   <footer class="site-footer">

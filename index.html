@@ -13,9 +13,8 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">enkitech</a>
+      <a class="brand" href="./" aria-current="page">enkitech</a>
       <nav class="site-nav" aria-label="Main">
-        <a href="./" aria-current="page">About</a>
         <a href="projects/">Projects</a>
         <a href="#contact">Contact</a>
         <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17Z" fill="currentColor"/></svg></button>
@@ -23,30 +22,16 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="wrap intro" aria-labelledby="intro-title">
-      <h1 id="intro-title">Hello, I'm Kassem.</h1>
-      <p class="lede">This is my personal page: a little about me, and how to reach me. My work is on the <a href="projects/">projects page</a>.</p>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap">
-        <h2 id="about-title">About me</h2>
-        <div class="body">
-          <p>I'm a software architect with roots in data science. I work mostly on data platforms, distributed systems and AI agents. In my own time I like building small tools that solve one problem well; some of them are on the <a href="projects/">projects page</a>.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 id="contact-title">Contact</h2>
-        <div class="body">
-          <p>Email: <a href="mailto:contact@enkitech.de">contact@enkitech.de</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/kasfreedom">linkedin.com/in/kasfreedom</a></p>
-        </div>
-      </div>
-    </section>
+  <main id="main" class="wrap page">
+    <h1>Hello, I'm Kassem.</h1>
+    <p>I'm a software architect with roots in data science. I work mostly on data platforms, distributed systems and AI agents.</p>
+    <p>In my own time I build small tools that solve one problem well. Two of them so far:</p>
+    <ul class="work">
+      <li><a href="https://sabura.enkitech.de/">Sabura</a>, a whiteboard that lives in one HTML file.</li>
+      <li><a href="https://athyr.enkitech.de/">Athyr</a>, a small runtime for AI agents as distributed services.</li>
+    </ul>
+    <p>There's more about each on the <a href="projects/">projects page</a>.</p>
+    <p id="contact">You can reach me at <a href="mailto:contact@enkitech.de">contact@enkitech.de</a> or on <a href="https://www.linkedin.com/in/kasfreedom">LinkedIn</a>.</p>
   </main>
 
   <footer class="site-footer">
