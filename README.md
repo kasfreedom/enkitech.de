@@ -45,6 +45,9 @@ texts are a reasonable starting point, not legal advice.
 
 ### 1. Create the repo and turn on Pages (needs your go-ahead)
 
+Only after the TODO grep above prints nothing: once pushed and published, the pages are
+public at `kasfreedom.github.io/enkitech.de/` even before DNS points anywhere.
+
 ```bash
 gh repo create kasfreedom/enkitech.de --public --source=. --push
 ```
@@ -75,9 +78,10 @@ repos of the account that verified it. If `kasfreedom` verifies `enkitech.de`, t
 `sabura-app` organization can no longer serve `sabura.enkitech.de`. So:
 
 - If Sabura will move to `sabura.enkitech.de`: don't verify the apex under your personal
-  account. Instead let the `sabura-app` org verify `sabura.enkitech.de`
-  (org Settings → Pages; TXT `_github-pages-challenge-sabura-app.sabura`), and rely on
-  steps 1 and 3 (domain set in Pages before DNS, no wildcard records) for the apex.
+  account. GitHub's docs don't say whether an organization can verify just a subdomain
+  (`sabura.enkitech.de`); try it in the `sabura-app` org's Settings → Pages and use the
+  TXT name the UI shows. Otherwise rely on steps 1 and 3 (domain set in Pages before DNS,
+  no wildcard records).
 - If Sabura stays at `sabura-app.github.io`: verify `enkitech.de` under your account.
 
 These TXT records are **only for GitHub** and are separate from the DNS TXT record
