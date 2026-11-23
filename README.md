@@ -72,8 +72,9 @@ private `athyr` repo (the source), `athyr-tech/athyr-bin`, `static/install.sh` i
 `athyr-website`, and `athyr-tech/athyr.tech`. Keep `athyr.tech` registered while old links
 may be around; if it lapsed, someone else could serve a script at that URL.
 
-`athyr.tech` has no MX record, so `dev@athyr.tech` (in `athyr-sdk-python`),
-`security@athyr.tech` (in `mcpx`) and `brand@athyr.tech` don't receive mail.
+`athyr.tech` has no MX record, so it can't receive mail. Contact addresses in the Athyr
+repos (`athyr-sdk-python` author, `mcpx` SECURITY.md, the brand guide) use
+`contact@enkitech.de` instead.
 
 ### Things to know
 
