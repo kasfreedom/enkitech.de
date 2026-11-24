@@ -14,7 +14,9 @@ not a registered company). Served by GitHub Pages. No build step, no third-party
 - `404.html`: page for unknown paths.
 - `assets/site.css`: styles. Newsreader (headings) and Inter (text), self-hosted in
   `assets/fonts/` under the SIL Open Font License (licence files next to them). Light and
-  dark mode follow the visitor's system setting; nothing is stored in the browser. The
+  dark mode follow the system setting until the visitor uses the switch in the header;
+  `assets/theme.js` keeps that choice in the visitor's browser under `enkitech_theme`
+  (mentioned on the privacy page). The
   frame is a full-height flex column, so the footer rests at the bottom on short pages.
 - `assets/og.png`: the 1200×630 image shown when the site is shared (LinkedIn and others).
   It was rendered from an HTML page with headless Chrome; if the name or role changes,
