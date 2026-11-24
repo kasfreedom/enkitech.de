@@ -1,23 +1,31 @@
 # enkitech.de
 
-Static site for `enkitech.de`, a personal page (about me, my work, contact) under the
-name Enkitech (a personal brand, not a registered company). Served by GitHub Pages.
-No build step, no third-party requests (no web fonts, CDNs or analytics).
+Static site for `enkitech.de`, a personal page under the name Enkitech (a personal brand,
+not a registered company). Served by GitHub Pages. No build step, no third-party requests
+(fonts are served from this site; no CDNs or analytics).
 
-- `index.html`: home page, written as one short note: about me, a pointer to the projects,
-  contact. The projects are listed only on `projects/`. All pages share one layout (`.page` in `site.css`): one column, one spacing
-  rhythm, no section dividers or side labels.
-- `projects/`: the projects (Sabura, Athyr; a commented template at the end of the list
-  for adding the next one).
+- `index.html`: home page, one block: name, role, a short note about me, contact. The
+  projects are listed only on `projects/`.
+- `projects/`: the projects (Sabura, Athyr), each with a small inline-SVG thumbnail; a
+  comment at the end of the list says how to add the next one.
 - `privacy/`: privacy policy. There is no Impressum: the site is run as a personal,
-  non-commercial page (no company, nothing sold), by the owner's decision on 2026-11-23.
-- `assets/site.css`: styles: one quiet column, serif headings, system fonts only, light and
-  dark mode. Deliberately plainer than the projects' own sites, so each project keeps its
-  own look. `assets/theme.js`: light/dark switch (stored in the visitor's browser under
-  `enkitech_theme`).
+  non-commercial page (no company, nothing sold, no offer of services), by the owner's
+  decision on 2026-11-23, confirmed 2026-11-24. No street address or location on the site.
+- `404.html`: page for unknown paths.
+- `assets/site.css`: styles. Newsreader (headings) and Inter (text), self-hosted in
+  `assets/fonts/` under the SIL Open Font License (licence files next to them). Light and
+  dark mode follow the visitor's system setting; nothing is stored in the browser. The
+  frame is a full-height flex column, so the footer rests at the bottom on short pages.
+- `assets/og.png`: the 1200×630 image shown when the site is shared (LinkedIn and others).
+  It was rendered from an HTML page with headless Chrome; if the name or role changes,
+  re-render it rather than editing the PNG.
+- `assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`: site icons.
 - `CNAME`: the custom domain GitHub Pages serves this repo on.
 
-Preview locally: `python3 -m http.server 8812` and open http://127.0.0.1:8812/.
+Pages link to `/assets/…` with root-relative paths (needed for `404.html`, which GitHub
+serves at any depth), so preview from the repo root:
+
+`python3 -m http.server 8812`, then open http://127.0.0.1:8812/.
 
 Plain HTML on purpose (decided 2026-11-23). Switch to Hugo when the first blog post is
 ready: same toolchain and Pages deploy workflow as `athyr-tech/athyr-website`, own layouts
@@ -26,8 +34,8 @@ rule).
 
 ## Before publishing
 
-All placeholders are filled in. If you add new ones, mark them `TODO-…` in a
-`<span class="todo">`; this must print nothing before you publish:
+All placeholders are filled in. If you add new ones, mark them `TODO-…`;
+this must print nothing before you publish:
 
 ```bash
 grep -rn 'TODO-' --include='*.html' .
