@@ -61,7 +61,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;color:v
 .link:hover{opacity:.75}
 
 /* home, one page: name and note on top, then the projects as rows */
-.hero{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:40px 72px;padding:112px 0 104px}
+.hero{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:40px 72px;padding:112px 0 88px}
 .hero-title{flex:999 1 520px;min-width:0}
 .hero h1{font-size:clamp(52px,7.8vw,112px);line-height:.98}
 .hero .role{margin:22px 0 0;font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.4vw,32px);line-height:1.2;letter-spacing:-.02em;color:var(--accent)}
@@ -79,7 +79,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;color:v
 .page .small{font-size:14px;color:var(--muted)}
 
 /* projects: one row per project, thumbnail beside the text; stacks on phones */
-.projects{border-top:1px solid var(--line);scroll-margin-top:24px}
+.projects-intro{max-width:36em;margin:0 0 32px;font-size:17.5px;color:var(--body);scroll-margin-top:24px}
+.projects{border-top:1px solid var(--line)}
 .project{display:grid;grid-template-columns:220px minmax(0,1fr);align-items:center;gap:20px 56px;padding:40px 0;border-bottom:1px solid var(--line)}
 .project h2{font-size:40px;line-height:1}
 .project p{max-width:36em;margin:12px 0 0;color:var(--muted)}
@@ -98,7 +99,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;color:v
 @media (max-width:720px){
   .frame{padding:0 24px}
   .site-header{padding:28px 0}
-  .hero{padding:64px 0 80px;gap:32px}
+  .hero{padding:64px 0 64px;gap:32px}
   .project{grid-template-columns:1fr;padding:32px 0}
   .project h2{font-size:34px}
   .thumb{max-width:280px}
