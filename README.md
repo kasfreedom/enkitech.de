@@ -6,7 +6,7 @@ not a registered company). Served by GitHub Pages. No build step, no third-party
 
 - `index.html`: the whole site on one page: name, role, a short note and contact on top,
   then the projects as rows (`#projects`, newest first; a comment at the end of the list
-  says how to add the next one). Menu: Projects (`/#projects`), Writing (`/writing/`),
+  says how to add the next one). Menu: Home (`/`), Writing (`/writing/`),
   theme switch. Decided 2026-11-25.
 - `writing/`: articles, a page of its own. "No articles yet." until the first one; a
   comment there shows the list markup.
