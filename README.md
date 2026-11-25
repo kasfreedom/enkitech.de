@@ -4,10 +4,10 @@ Static site for `enkitech.de`, a personal page under the name Enkitech (a person
 not a registered company). Served by GitHub Pages. No build step, no third-party requests
 (fonts are served from this site; no CDNs or analytics).
 
-- `index.html`: home page, one block: name, role, a short note about me, contact. The
-  projects are listed only on `projects/`.
-- `projects/`: the projects (Sabura, Athyr), each with a small inline-SVG thumbnail; a
-  comment at the end of the list says how to add the next one.
+- `index.html`: the whole site on one page: name, role, a short note and contact on top,
+  then the projects as rows (`#projects`, newest first; a comment at the end of the list
+  says how to add the next one). Decided 2026-11-25.
+- `projects/`: only a redirect to `/#projects`, so old links keep working.
 - `privacy/`: privacy policy. There is no Impressum: the site is run as a personal,
   non-commercial page (no company, nothing sold, no offer of services), by the owner's
   decision on 2026-11-23, confirmed 2026-11-24. No street address or location on the site.
