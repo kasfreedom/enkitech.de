@@ -85,10 +85,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;color:v
 .project h2{font-size:40px;line-height:1}
 .project p{max-width:36em;margin:12px 0 0;color:var(--muted)}
 .project .links{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:16px;font-size:15px}
-.projects-note{margin:28px 0 72px;font-size:14px;color:var(--muted)}
-.writing{border-top:1px solid var(--line);padding:40px 0 112px;scroll-margin-top:24px}
-.writing h2{font-size:40px;line-height:1}
-.writing p{max-width:36em;margin:12px 0 0;color:var(--muted)}
+.projects-note{margin:28px 0 112px;font-size:14px;color:var(--muted)}
+.articles{list-style:none;padding:0}
+.articles li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.articles time{font-size:14px;color:var(--muted)}
 .thumb{aspect-ratio:16/10;background:var(--surface);display:flex;align-items:center;justify-content:center;border-radius:2px;overflow:hidden}
 .thumb--dark{background:var(--thumb-dark)}
 .thumb svg{width:84%;height:84%;display:block}
@@ -106,8 +106,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;color:v
   .project{grid-template-columns:1fr;padding:32px 0}
   .project h2{font-size:34px}
   .thumb{max-width:280px}
-  .projects-note{margin-bottom:56px}
-  .writing{padding:32px 0 80px}
-  .writing h2{font-size:34px}
+  .projects-note{margin-bottom:80px}
   .page{padding:48px 0 80px}
 }

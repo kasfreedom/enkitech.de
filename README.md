@@ -6,9 +6,10 @@ not a registered company). Served by GitHub Pages. No build step, no third-party
 
 - `index.html`: the whole site on one page: name, role, a short note and contact on top,
   then the projects as rows (`#projects`, newest first; a comment at the end of the list
-  says how to add the next one), then `#writing` ("No articles yet." until the first
-  article; a comment there shows the list markup). Menu: Projects, Writing, theme switch.
-  Decided 2026-11-25.
+  says how to add the next one). Menu: Projects (`/#projects`), Writing (`/writing/`),
+  theme switch. Decided 2026-11-25.
+- `writing/`: articles, a page of its own. "No articles yet." until the first one; a
+  comment there shows the list markup.
 - `projects/`: only a redirect to `/#projects`, so old links keep working.
 - `privacy/`: privacy policy. There is no Impressum: the site is run as a personal,
   non-commercial page (no company, nothing sold, no offer of services), by the owner's
